@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sitio estático — Firebase Hosting</title>
+    <meta name="description" content="Plantilla mínima para desplegar en Firebase Hosting sin instalar nada (con Cloud Shell)." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <p class="badge">Firebase Hosting • HTML/CSS/JS</p>
+        <h1>Sitio estático listo para publicar</h1>
+        <p class="subtitle">
+          Este mini-sitio vive en una carpeta <strong>public/</strong>. Lo desplegamos y queda servido con HTTPS.
+        </p>
+
+        <div class="actions">
+          <button id="btnAction" class="btn primary" type="button">Hacer magia</button>
+          <a class="btn ghost" href="#seccion">Ver sección</a>
+        </div>
+
+        <p id="status" class="status" aria-live="polite">
+          Estado: esperando tu click.
+        </p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section id="seccion" class="card">
+        <h2>¿Qué vas a cambiar hoy?</h2>
+        <ul class="list">
+          <li><span class="dot"></span> Tu nombre / equipo</li>
+          <li><span class="dot"></span> Colores (CSS)</li>
+          <li><span class="dot"></span> El texto del botón (JS)</li>
+        </ul>
+        <p class="note">
+          Tip docente: el “Release 2” será cambiar algo visible y volver a hacer <code>firebase deploy</code>.
+        </p>
+      </section>
+
+      <section class="grid">
+        <article class="mini">
+          <h3>1) HTML</h3>
+          <p>Estructura y contenido: títulos, botones, secciones.</p>
+        </article>
+        <article class="mini">
+          <h3>2) CSS</h3>
+          <p>Estilo: tipografía, espaciado, tarjetas y colores.</p>
+        </article>
+        <article class="mini">
+          <h3>3) JS</h3>
+          <p>Interacción: un click que cambia el mensaje y el contador.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <p>
+          Hecho para clase. Publica, cambia algo, y vuelve a publicar.
+          <span class="sep">•</span>
+          <a href="https://firebase.google.com/docs/hosting" target="_blank" rel="noreferrer">Docs</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
